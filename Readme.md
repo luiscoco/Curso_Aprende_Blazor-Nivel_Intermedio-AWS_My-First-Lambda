@@ -1,49 +1,27 @@
-# AWS Lambda Empty Function Project
+# My First AWS Lambda (C# and .NET6)
 
-This starter project consists of:
-* Function.cs - class file containing a class with a single function handler method
-* aws-lambda-tools-defaults.json - default argument settings for use with Visual Studio and command line deployment tools for AWS
+## 1. Run Visual Studio 2022 Community Edition
 
-You may also have a test project depending on the options selected.
+We first donwload and install Visual Studio 2022 Community Edition
 
-The generated function handler is a simple method accepting a string argument that returns the uppercase equivalent of the input string. Replace the body of this method, and parameters, to suit your needs. 
+https://visualstudio.microsoft.com/vs/community/
 
-## Here are some steps to follow from Visual Studio:
+![image](https://github.com/user-attachments/assets/c924b4fe-f80a-4bba-ac85-4dbce9f62720)
 
-To deploy your function to AWS Lambda, right click the project in Solution Explorer and select *Publish to AWS Lambda*.
+We also have to download and install AWS Toolkit for Visual Studio
 
-To view your deployed function open its Function View window by double-clicking the function name shown beneath the AWS Lambda node in the AWS Explorer tree.
+https://aws.amazon.com/visualstudio/
 
-To perform testing against your deployed function use the Test Invoke tab in the opened Function View window.
+![image](https://github.com/user-attachments/assets/8ac5e7b4-364f-4974-ae65-dc7c29fb7771)
 
-To configure event sources for your deployed function, for example to have your function invoked when an object is created in an Amazon S3 bucket, use the Event Sources tab in the opened Function View window.
+![image](https://github.com/user-attachments/assets/52cc4114-d0d6-4b4a-b1b1-793b9f419ac4)
 
-To update the runtime configuration of your deployed function use the Configuration tab in the opened Function View window.
 
-To view execution logs of invocations of your function use the Logs tab in the opened Function View window.
 
-## Here are some steps to follow to get started from the command line:
+## 2. Create a new Project 
 
-Once you have edited your template and code you can deploy your application using the [Amazon.Lambda.Tools Global Tool](https://github.com/aws/aws-extensions-for-dotnet-cli#aws-lambda-amazonlambdatools) from the command line.
+![image](https://github.com/user-attachments/assets/ae2413c2-2c6b-4299-a39d-412aaed83669)
 
-Install Amazon.Lambda.Tools Global Tools if not already installed.
-```
-    dotnet tool install -g Amazon.Lambda.Tools
-```
+## 3. Select the project template 
 
-If already installed check if new version is available.
-```
-    dotnet tool update -g Amazon.Lambda.Tools
-```
 
-Execute unit tests
-```
-    cd "AWSLambda¡HelloWorld/test/AWSLambda¡HelloWorld.Tests"
-    dotnet test
-```
-
-Deploy function to AWS Lambda
-```
-    cd "AWSLambda¡HelloWorld/src/AWSLambda¡HelloWorld"
-    dotnet lambda deploy-function
-```
