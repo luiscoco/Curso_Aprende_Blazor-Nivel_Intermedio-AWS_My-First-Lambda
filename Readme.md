@@ -138,6 +138,10 @@ First of all take care when you set the .NET version in the AWS Lambda project. 
 }
 ```
 
+After deploying the AWS Lambda please verify the Runtime Framework matches the stablished in the previous files
+
+![image](https://github.com/user-attachments/assets/44a81059-11ed-4277-85a2-30d031781044)
+
 ## 6. How to build and test the application from the command line
 
 We can deploy the application using **Amazon.Lambda.Tools Global Tool** from the command line
