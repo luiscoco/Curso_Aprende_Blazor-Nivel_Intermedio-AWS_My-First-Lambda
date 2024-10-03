@@ -1,6 +1,6 @@
 # My First AWS Lambda (C# and .NET6)
 
-## 1. Run Visual Studio 2022 Community Edition
+## 1. Install and Run Visual Studio 2022 Community Edition
 
 We first donwload and install Visual Studio 2022 Community Edition
 
@@ -20,7 +20,7 @@ https://aws.amazon.com/visualstudio/
 
 ![image](https://github.com/user-attachments/assets/ae2413c2-2c6b-4299-a39d-412aaed83669)
 
-## 3. Select the AWS Lambda project template 
+## 3. Select the AWS Lambda projects template 
 
 There are four projects templates for creating AWS Lambda and AWS Serverless applications:
 
@@ -138,7 +138,7 @@ First of all take care when you set the .NET version in the AWS Lambda project. 
 }
 ```
 
-## 6. How to build and test the application
+## 6. How to build and test the application from the command line
 
 We can deploy the application using **Amazon.Lambda.Tools Global Tool** from the command line
 
@@ -169,3 +169,7 @@ dotnet test
 cd "AWSLambdaHelloWorld/src/AWSLambdaHelloWorld"
 dotnet lambda deploy-function
 ```
+
+## 7. How to build and test the application from the Visual Studio IDE
+
+
