@@ -210,17 +210,4 @@ We select the Test tab and we input a raw string "hola" and press the **JSON** b
 
 ![image](https://github.com/user-attachments/assets/f868577e-02ec-4de0-a20d-e8e5f00ab63d)
 
-For invoking the AWS Lambda Function from Postman you need to create a **function URL**
-
-![image](https://github.com/user-attachments/assets/a5cd1c73-1ff4-407e-8498-fbaeb875fc56)
-
-We select the None option and we press the Save button
-
-![image](https://github.com/user-attachments/assets/8c7a3f56-6c75-41a9-9788-e90343091d00)
-
-We copy the Function URL and paste in Postman
-
-![image](https://github.com/user-attachments/assets/16106b44-4351-44b0-b1cf-e81eb6f56925)
-
-
 
