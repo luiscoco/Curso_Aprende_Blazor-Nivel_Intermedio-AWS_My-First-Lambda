@@ -180,6 +180,14 @@ Then run the test case and see the result
 
 ![image](https://github.com/user-attachments/assets/6ddddec3-c8d3-4ee7-8634-217b94e376c2)
 
-Also we can deploy the AWS Lambda from Visual Studio 2022
+Also we can deploy the AWS Lambda from Visual Studio 2022, we select the menu option **Publish to AWS Lambda**
 
 ![image](https://github.com/user-attachments/assets/ce9e77e7-dfb8-43d6-92b2-1faf842a75e1)
+
+Then we input the required data for publishing
+
+![image](https://github.com/user-attachments/assets/8fb8f9eb-b709-4a70-a3c7-e22aaf82bff6)
+
+![image](https://github.com/user-attachments/assets/6cc7ac45-9db9-4b11-9fe1-73a8cfdaf2c8)
+
+
