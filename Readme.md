@@ -42,9 +42,9 @@ d) AWS Serverless Application with Tests (.NET Core - C#)
 
 This is the project folders and files structure: 
 
-![image](https://github.com/user-attachments/assets/1a5d9b7a-62c2-4afd-a279-d342cdc35a33)
+![image](https://github.com/user-attachments/assets/33399d20-987e-4d04-97d0-457f4ddf5421)
 
-Thi is the Function.cs code:
+Thi is the **Function.cs** code:
 
 ```csharp
 using Amazon.Lambda.Core;
@@ -66,4 +66,27 @@ public class Function
 }
 ```
 
+Also we can test the above function with the **FunctionTest.cs** code:
 
+```csharp
+using Xunit;
+using Amazon.Lambda.Core;
+using Amazon.Lambda.TestUtilities;
+
+namespace AWSLambdaHelloWorld.Tests;
+
+public class FunctionTest
+{
+    [Fact]
+    public void TestToUpperFunction()
+    {
+
+        // Invoke the lambda function and confirm the string was upper cased.
+        var function = new Function();
+        var context = new TestLambdaContext();
+        var upperCase = function.FunctionHandler("hello world", context);
+
+        Assert.Equal("HELLO WORLD", upperCase);
+    }
+}
+```
