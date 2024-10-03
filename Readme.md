@@ -192,3 +192,7 @@ Then we input the required data for publishing
 
 ![image](https://github.com/user-attachments/assets/fb8452ee-8cc5-4aab-96b8-9717b8844226)
 
+We can test it see the output
+
+![image](https://github.com/user-attachments/assets/eba0fd7b-c803-4d04-a149-6c3dcff5b38d)
+
