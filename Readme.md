@@ -179,3 +179,7 @@ First you need to open Test Explorer
 Then run the test case and see the result
 
 ![image](https://github.com/user-attachments/assets/6ddddec3-c8d3-4ee7-8634-217b94e376c2)
+
+Also we can deploy the AWS Lambda from Visual Studio 2022
+
+![image](https://github.com/user-attachments/assets/ce9e77e7-dfb8-43d6-92b2-1faf842a75e1)
