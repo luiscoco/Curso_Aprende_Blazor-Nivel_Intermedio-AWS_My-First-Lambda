@@ -190,4 +190,5 @@ Then we input the required data for publishing
 
 ![image](https://github.com/user-attachments/assets/6cc7ac45-9db9-4b11-9fe1-73a8cfdaf2c8)
 
+![image](https://github.com/user-attachments/assets/fb8452ee-8cc5-4aab-96b8-9717b8844226)
 
