@@ -90,3 +90,87 @@ public class FunctionTest
     }
 }
 ```
+
+## 5. Pay attentionin the following issues
+
+First of all take care when you set the .NET version in the project we selected .NET 6 as you can validate in these files:
+
+**AWSLambdaHelloWorld.csproj**
+
+```csharp
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <AWSProjectType>Lambda</AWSProjectType>
+    <!-- This property makes the build directory similar to a publish directory and helps the AWS .NET Lambda Mock Test Tool find project dependencies. -->
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <!-- Generate ready to run images during publishing to improve cold start time. -->
+    <PublishReadyToRun>true</PublishReadyToRun>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Amazon.Lambda.Core" Version="2.2.0" />
+    <PackageReference Include="Amazon.Lambda.Serialization.SystemTextJson" Version="2.4.0" />
+  </ItemGroup>
+</Project>
+```
+
+**aws-lambda-tools-defaults.json**
+
+```csharp
+{
+  "Information": [
+    "This file provides default values for the deployment wizard inside Visual Studio and the AWS Lambda commands added to the .NET Core CLI.",
+    "To learn more about the Lambda commands with the .NET Core CLI execute the following command at the command line in the project root directory.",
+    "dotnet lambda help",
+    "All the command line options for the Lambda command can be specified in this file."
+  ],
+  "profile": "default",
+  "region": "eu-west-3",
+  "configuration": "Release",
+  "function-architecture": "x86_64",
+  "function-runtime": "dotnet6",
+  "function-memory-size": 256,
+  "function-timeout": 30,
+  "function-handler": "AWSLambdaHelloWorld::AWSLambdaHelloWorld.Function::FunctionHandler"
+}
+```
+
+Another important issue is the projects packages and references
+
+
+
+
+## 6. How to build and test the application
+
+We can deploy the application using **Amazon.Lambda.Tools Global Tool** from the command line
+
+https://github.com/aws/aws-extensions-for-dotnet-cli#aws-lambda-amazonlambdatools
+
+Install Amazon.Lambda.Tools Global Tools if not already installed.
+
+```
+dotnet tool install -g Amazon.Lambda.Tools
+```
+
+If already installed check if new version is available.
+
+```
+dotnet tool update -g Amazon.Lambda.Tools
+```
+
+**Execute unit tests**
+
+```
+cd "AWSLambdaHelloWorld/test/AWSLambdaHelloWorld.Tests"
+dotnet test
+```
+
+**Deploy function to AWS Lambda**
+
+```
+cd "AWSLambdaHelloWorld/src/AWSLambdaHelloWorld"
+dotnet lambda deploy-function
+```
