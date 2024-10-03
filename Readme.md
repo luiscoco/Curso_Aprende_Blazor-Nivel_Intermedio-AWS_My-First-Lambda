@@ -91,9 +91,9 @@ public class FunctionTest
 }
 ```
 
-## 5. Pay attentionin the following issues
+## 5. Pay attentionin the following issue
 
-First of all take care when you set the .NET version in the project we selected .NET 6 as you can validate in these files:
+First of all take care when you set the .NET version in the AWS Lambda project. We selected .NET 6 as you can validate in these files:
 
 **AWSLambdaHelloWorld.csproj**
 
@@ -137,11 +137,6 @@ First of all take care when you set the .NET version in the project we selected 
   "function-handler": "AWSLambdaHelloWorld::AWSLambdaHelloWorld.Function::FunctionHandler"
 }
 ```
-
-Another important issue is the projects packages and references
-
-
-
 
 ## 6. How to build and test the application
 
