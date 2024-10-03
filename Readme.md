@@ -24,8 +24,46 @@ https://aws.amazon.com/visualstudio/
 
 There are four projects templates for creating AWS Lambda and AWS Serverless applications:
 
-The first one is ****
+a) AWS Lambda Project (.NET Core - C#)
 
-![image](https://github.com/user-attachments/assets/bdae46b3-e2c6-4b12-9ce1-fc30822e0ac8)
+b) AWS Lambda Project with Tests (.NET Core - C#)
 
-## 4. 
+c) AWS Serverless Application (.NET Core - C#)
+
+d) AWS Serverless Application with Tests (.NET Core - C#)
+
+## 4. We are going to select the AWS Lambda Project with Tests (.NET Core - C#)
+
+![image](https://github.com/user-attachments/assets/7f83338c-ef7c-4105-8ec8-e6112510aaeb)
+
+![image](https://github.com/user-attachments/assets/b942b04e-9cb0-4bbf-a435-17e95d9a348a)
+
+![image](https://github.com/user-attachments/assets/54f734b0-b0ce-4395-b816-cc664b407cbd)
+
+This is the project folders and files structure: 
+
+![image](https://github.com/user-attachments/assets/1a5d9b7a-62c2-4afd-a279-d342cdc35a33)
+
+Thi is the Function.cs code:
+
+```csharp
+using Amazon.Lambda.Core;
+
+// Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
+[assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
+
+namespace AWSLambdaHelloWorld;
+
+public class Function
+{   
+    /// <summary>
+    /// A simple function that takes a string and does a ToUpper
+    /// </summary>
+    public string FunctionHandler(string input, ILambdaContext context)
+    {
+        return input.ToUpper();
+    }
+}
+```
+
+
