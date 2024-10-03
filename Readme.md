@@ -172,4 +172,10 @@ dotnet lambda deploy-function
 
 ## 7. How to build and test the application from the Visual Studio IDE
 
+First you need to open Test Explorer 
 
+![image](https://github.com/user-attachments/assets/928cd6a2-4a77-4c7e-a40e-4881abfe0409)
+
+Then run the test case and see the result
+
+![image](https://github.com/user-attachments/assets/6ddddec3-c8d3-4ee7-8634-217b94e376c2)
