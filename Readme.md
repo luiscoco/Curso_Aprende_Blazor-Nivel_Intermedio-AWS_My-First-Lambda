@@ -202,10 +202,13 @@ We can test it see the output
 
 ## 8. Verify in AWS Console the new AWS Lambda
 
+We first click on the AWS Lambda function name
+
 ![image](https://github.com/user-attachments/assets/11e7fcec-b6ff-4a7e-a115-ae01bdd491f7)
 
-![image](https://github.com/user-attachments/assets/f868577e-02ec-4de0-a20d-e8e5f00ab63d)
+We select the Test tab and we input a raw string "hola" and press the **JSON** button for formatting and after the **Test** button for executing the test
 
+![image](https://github.com/user-attachments/assets/f868577e-02ec-4de0-a20d-e8e5f00ab63d)
 
 For invoking the AWS Lambda Function from Postman you need to create a **function URL**
 
