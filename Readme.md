@@ -22,6 +22,10 @@ https://aws.amazon.com/visualstudio/
 
 ## 3. Select the AWS Lambda project template 
 
+There are four projects templates for creating AWS Lambda and AWS Serverless applications:
+
+The first one is ****
+
 ![image](https://github.com/user-attachments/assets/bdae46b3-e2c6-4b12-9ce1-fc30822e0ac8)
 
 ## 4. 
