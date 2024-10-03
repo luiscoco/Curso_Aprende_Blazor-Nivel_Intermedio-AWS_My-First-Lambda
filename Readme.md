@@ -196,3 +196,7 @@ We can test it see the output
 
 ![image](https://github.com/user-attachments/assets/eba0fd7b-c803-4d04-a149-6c3dcff5b38d)
 
+## 8. Verify in AWS Console the new AWS Lambda
+
+![image](https://github.com/user-attachments/assets/11e7fcec-b6ff-4a7e-a115-ae01bdd491f7)
+
