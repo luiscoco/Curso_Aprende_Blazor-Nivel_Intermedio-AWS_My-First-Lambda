@@ -16,12 +16,12 @@ https://aws.amazon.com/visualstudio/
 
 ![image](https://github.com/user-attachments/assets/52cc4114-d0d6-4b4a-b1b1-793b9f419ac4)
 
-
-
 ## 2. Create a new Project 
 
 ![image](https://github.com/user-attachments/assets/ae2413c2-2c6b-4299-a39d-412aaed83669)
 
-## 3. Select the project template 
+## 3. Select the AWS Lambda project template 
 
+![image](https://github.com/user-attachments/assets/bdae46b3-e2c6-4b12-9ce1-fc30822e0ac8)
 
+## 4. 
